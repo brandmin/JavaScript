@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var kor = Number(prompt('kor'));
+    var eng = Number(prompt('eng'));
+    var math = Number(prompt('math'));
+    var avg = (kor + eng + math) / 3;
+    document.write(avg);
+    document.write('<br>' + avg.toFixed(2));
+
+    if(avg >= 90) {
+      alert('수');
+    } else if(avg >80) {
+      alert('우');
+    } else if(avg >70) {
+      alert('미');
+    } else if(avg >60) {
+      alert('양');
+    } else {
+      alert('가');
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var result = prompt("성적은?", "여기입력");
+      document.write(result, "<br>");
+      document.write(result + 10, "<br>");
+      document.write(typeof result, "<br>");
+
+      result = Number(result);
+      document.write(result + 10, "<br>");
+      document.write(typeof result, "<br>");
+
+      var result = "14.5";
+      document.write(Number(result), "<br>");
+      document.write(parseFloat(result), "<br>");
+      document.write(parseInt(result), "<br>");
+      document.write(String(result), "<br>");
+
+      var result = "14.5원";
+      document.write(Number(result), "<br>");
+      document.write(parseFloat(result), "<br>");
+      document.write(parseInt(result), "<br>");
+      document.write(String(result), "<br>");
+
+      var word = window.confirm("true or false") ? true : false;
+      document.write(word, "<br>");
+
+      // toFixed: 실수를 소수점 n자리로 반올림
+      var number = 3.14159265;
+      // 소수점 두 자리로 반올림한 문자열 "3.14";
+      var roundedNumber = number.toFixed(2);
+    </script>
+  </body>
+</html>
